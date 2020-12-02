@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <script>
+
+        /*
+        
+        ---- Tasks ----
+        
+        1) Write a JavaScript function that reverse a number.
+        2) write a JavaScript function that accepts a number as a parameter and check the number is prime or not.
+
+
+        */
+
+
+        // ------ task 1 ------
+
+        var numY = 0;
+        var numZ = prompt("Enter a number: ");
+            
+            while(numZ != 0){
+                numY = numY * 10;
+                numY = numY + numZ % 10;
+                numZ = numZ / 10;
+                }
+            
+            alert("The number is: "+numY)
+
+            
+        // ------ task 2 ------
+
+        var num = prompt("Enter a number: ");
+        var counter = 0;
+        function checkPrime(num){
+            for(var i=2; i<num; i++){
+                if(num%i==0){
+                    counter++;
+                }
+            }
+            if(counter>1){
+                    alert("The number is prime");
+                }
+            else{
+                alert("The number isnt prime");
+            }
+        }
+
+
+    </script>
+
+
+</head>
+
+<body>
+
+</body>
+
+</html>

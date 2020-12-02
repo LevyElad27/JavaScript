@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <script>
+
+        /*
+        
+        ---- Tasks ----
+        
+        1) Get a number and print if it is bigger than 928 and less than 532.
+        2) Get  three numbers and print "Increasing..." if the second bigger than first 
+           and if the third bigger than second.
+        3) Get two numbers and print "Growing.." if the second bigger than first.
+        4) Get a number and print if it is "Even" or "Odd" number.
+        5) Get two numbers and print the smallest number and after the bigger number.
+        6) Get a number and print if it is "Positive" or "Negative" number or "Zero".
+        
+        */
+
+
+        // ------ task 1 ------
+
+        var numA = prompt("Enter a number: ");
+
+        if (numA > 928 || numA < 523) {
+            alert("The number is: " + numA);
+        }
+
+
+        // ------ task 2 ------
+
+        var numf = prompt("Enter the first number: ");
+        var numc = prompt("Enter the second number: ");
+        var numt = prompt("Enter the third number: ");
+
+        if (numt > numc && numc > numf) {
+            alert("Increasing...");
+        }
+
+
+        // ------ task 3 ------
+
+        var numI = prompt("Enter the first number: ");
+        var numII = prompt("Enter the second number: ");
+
+        if (numII > numI) {
+            alert("Growing...");
+        }
+
+        // ------ task 4 ------
+
+        var num = prompt("Enter a number: ");
+
+        if (num % 2 == 0) {
+            alert("Even number");
+        }
+        else {
+            alert("Odd number");
+        }
+
+        // ------ task 5 ------
+
+        var numP = prompt("Enter the first number: ");
+        var numSP = prompt("Enter the second number: ");
+
+        if (numP < numSP) {
+            alert("The smallest number is: " + numP);
+            alert("The biggest number is: " + numSP);
+        }
+        else {
+            alert("The smallest number is: " + numSP);
+            alert("The biggest number is: " + numP);
+        }
+
+
+        // ------ task 6 ------
+
+        var numZ = prompt("Enter a number: ");
+
+        if (numZ > 0) {
+            alert("The number is Positive!");
+        }
+        if (numZ < 0) {
+            alert("The number is Negative!");
+        }
+        else {
+            alert("The number is Zero!");
+        }
+
+    </script>
+
+
+</head>
+
+<body>
+
+</body>
+
+</html>
